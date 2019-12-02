@@ -1,0 +1,23 @@
+@mixin title ($fontSize: 16px, $w: 500) {
+	font-size: $fontSize;
+	color: $TitleColor;
+	font-weight: $w;
+}
+
+@mixin ellipsis ($line: 1) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $line;
+	-webkit-box-orient: vertical;
+}
+
+@mixin BgGradient ($d, $c1, $c2) {
+	background: linear-gradient($d, $c1, $c2);
+}
+
+@mixin BgImageCenter {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
